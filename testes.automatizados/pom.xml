@@ -34,4 +34,9 @@
 
   </dependencies>
 
+  <!-- Define automáticamente a pasta java como Test Sources Root -->
+  <build>
+    <testSourceDirectory>src/main/test/java</testSourceDirectory>
+  </build>
+
 </project>
