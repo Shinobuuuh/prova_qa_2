@@ -29,7 +29,7 @@ public class orcamento {
 
 
         // Preencher formulário para realizar orçamento campo Valor da Passagem
-        navegador.findElement(By.id("valorPassagem")).sendKeys("1");
+        navegador.findElement(By.id("valorPassagem")).sendKeys("-700");
 
         // Preencher formulário para realizar orçamento campo Número de Pessoas
         navegador.findElement(By.id("numeroPessoas")).sendKeys("1");
@@ -78,10 +78,10 @@ public class orcamento {
             }
             // Validar se o alerta apareceu para o campo "Valor Passagem"
             if (alertaApareceu) {
-                System.out.println("Alerta exibido corretamente para 'Valor Passagem'.");
+                System.out.println("Alerta exibido corretamente para 'Valor Passagem', o usuário colocou como valor: " + valorPassagem);
             } else {
-                System.out.println("Não apareceu o alerta para 'Valor Passagem'!");
-                Assertions.fail("O alerta não apareceu para 'Valor Passagem'. O teste falhou.");
+                System.out.println("Não apareceu o alerta para Valor Passagem, o usuário colocou como valor: " + valorPassagem);
+                Assertions.fail("O alerta não apareceu para Valor Passagem. O teste falhou.");
             }
         }
 
@@ -99,10 +99,10 @@ public class orcamento {
             }
             // Validar se o alerta apareceu para o campo "Número de Pessoas"
             if (alertaApareceu) {
-                System.out.println("Alerta exibido corretamente para 'Número de Pessoas'.");
+                System.out.println("Alerta exibido corretamente para Número de Pessoas inválido, o usuário colocou o valor " + numeroPessoas);
             } else {
-                System.out.println("Não apareceu o alerta para 'Número de Pessoas'!");
-                Assertions.fail("O alerta não apareceu para 'Número de Pessoas'. O teste falhou.");
+                System.out.println("Não apareceu o alerta para Número de Pessoas, o usuário colocou o valor " + numeroPessoas);
+                Assertions.fail("O alerta não apareceu para Número de Pessoas. O teste falhou.");
             }
         }
 
@@ -118,10 +118,10 @@ public class orcamento {
             }
             // Validar se o alerta apareceu para o campo "Dias de Hospedagem"
             if (alertaApareceu) {
-                System.out.println("Alerta exibido corretamente para 'Dias de Hospedagem'.");
+                System.out.println("Alerta exibido corretamente para Dias de Hospedagem inválido que foi " + diasHospedagem);
             } else {
-                System.out.println("Não apareceu o alerta para 'Dias de Hospedagem'!");
-                Assertions.fail("O alerta não apareceu para 'Dias de Hospedagem'. O teste falhou.");
+                System.out.println("Não apareceu o alerta para Dias de Hospedagem inválido que foi " + diasHospedagem);
+                Assertions.fail("O alerta não apareceu para Dias de Hospedagem. O teste falhou.");
             }
         }
 
@@ -137,10 +137,10 @@ public class orcamento {
             }
             // Validar se o alerta apareceu para o campo "Idade"
             if (alertaApareceu) {
-                System.out.println("Alerta exibido corretamente para 'Menor de Idade'.");
+                System.out.println("Alerta exibido corretamente para Menor de Idade.");
             } else {
-                System.out.println("Não apareceu o alerta para 'Menor de Idade'!");
-                Assertions.fail("O alerta não apareceu para 'Menor de Idade'. O teste falhou.");
+                System.out.println("Não apareceu o alerta para Menor de Idade!");
+                Assertions.fail("O alerta não apareceu para Menor de Idade. O teste falhou.");
             }
         }
 
